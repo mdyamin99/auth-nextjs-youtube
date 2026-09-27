@@ -67,6 +67,7 @@ export default function LoginPage() {
         {buttonDisabled ? "No Login" : "Login"}
       </button>
       <Link href="/signup">Visit Signup page</Link>
+      <Link href="/forgotpassword" className="mt-2 text-sm underline">Forgot your Password</Link>
     </div>
   );
 }

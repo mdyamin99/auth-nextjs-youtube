@@ -70,8 +70,9 @@ export default function SignupPage() {
       onChange={(e) => setUser({ ...user, password: e.target.value })}
       placeholder="password"
       />
-      <button onClick={onSignup} className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600">{buttonDisabled ? "No signup" : "Signup"}</button>
+      <button onClick={onSignup} className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 cursor-pointer">{buttonDisabled ? "No signup" : "Signup"}</button>
       <Link href="/login">Visit Login page</Link>
+      <Link href="/forgotpassword" className="mt-2 text-sm underline cursor-pointer">Forgot your Password</Link>
     </div>
   );
 }
